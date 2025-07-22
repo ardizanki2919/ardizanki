@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { thoughts } from './thoughts-data';
+import { thoughts } from '../data/thoughts-data';
 
 function Thoughts() {
   return (
