@@ -19,7 +19,7 @@ function About() {
 
   return (
     <div className="max-w-2xl">
-      <h1 className="text-2xl font-bold mb-8 text-slate-800">Ardizanki</h1>
+      <h1 className="text-2xl font-bold mb-8 text-slate-800">Ardi Zanki</h1>
       <div className="space-y-6 text-base text-slate-600 leading-relaxed">
         <p>
           I'm a software engineer with expertise in the React ecosystem, specializing in modern frontend development with Next.js, TypeScript, and Tailwind CSS. I'm passionate about building simple, clean, and minimalist user interfaces—with a strong emphasis on typography and visual hierarchy.
