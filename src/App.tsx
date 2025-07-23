@@ -33,6 +33,7 @@ const navigationItems = [
   { to: '/about', label: 'about' },
   { to: '/thoughts', label: 'thoughts' },
   { to: '/projects', label: 'projects' },
+  { to: 'https://ardizanki.com/', label: 'new website' },
 ];
 
 function NotFound() {
