@@ -35,10 +35,7 @@
     "vite": "^7.0.5"
   },
   "pnpm": {
-    "onlyBuiltDependencies": [
-      "sharp",
-      "@tailwindcss/oxide",
-      "esbuild"
-    ]
+    "allowedDeprecatedVersions": {},
+    "onlyBuiltDependencies": ["@tailwindcss/oxide", "esbuild", "sharp"]
   }
 }
