@@ -5,6 +5,7 @@ function Projects() {
     'TypeScript',
     'React',
     'Next.js',
+    'React Router',
     'Tailwind CSS',
   ];
 
