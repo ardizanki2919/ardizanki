@@ -1,12 +1,10 @@
 function Projects() {
   const technologies = [
-    'HTML & CSS',
-    'JavaScript',
-    'TypeScript',
-    'React',
     'Next.js',
-    'React Router',
-    'Tailwind CSS',
+    'React',
+    'TypeScript',
+    'Laravel',
+    'PHP',
   ];
 
   return (
