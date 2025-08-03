@@ -5,7 +5,7 @@ import {
   NavLink,
   Navigate,
 } from 'react-router-dom';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin, Twitter, ExternalLink } from 'lucide-react';
 import About from './pages/About';
 import Thoughts from './pages/Thoughts';
 import ThoughtDetail from './pages/ThoughtDetail';
@@ -29,11 +29,18 @@ const socialLinks = [
   },
 ];
 
-const navigationItems = [
+const internalNavItems = [
   { to: '/about', label: 'about' },
   { to: '/thoughts', label: 'thoughts' },
   { to: '/projects', label: 'projects' },
-  { to: 'https://ardizanki.com/', label: 'new website' },
+];
+
+const externalNavItems = [
+  { 
+    href: 'https://ardizanki.com/', 
+    label: 'new website',
+    icon: ExternalLink 
+  },
 ];
 
 function NotFound() {
@@ -43,7 +50,7 @@ function NotFound() {
       <p className="text-slate-600 mb-6">Sorry, the page you're looking for doesn't exist.</p>
       <NavLink 
         to="/about" 
-        className="text-slate-800 hover:text-slate-600 underline"
+        className="text-slate-800 hover:text-slate-600 underline transition-colors duration-200"
       >
         Go back home
       </NavLink>
@@ -56,19 +63,25 @@ function App() {
     <Router>
       <div className="min-h-screen flex flex-col md:flex-row">
         {/* Sidebar */}
-        <nav className="sidebar md:w-48 md:min-h-screen md:p-8" role="navigation">
-          <div className="md:fixed">
-            {/* Navigation Links */}
+        <nav className="w-full md:w-48 md:min-h-screen p-4 md:p-8 bg-white md:bg-transparent md:border-b-0" role="navigation">
+          <div className="md:sticky md:top-8">
+            {/* Brand/Title - Optional */}
             <div className="hidden md:block mb-8">
-              {/* <h1 className="text-xl font-bold">Ardizanki</h1> */}
+              {/* <h1 className="text-xl font-bold text-slate-800">Ardizanki</h1> */}
             </div>
-            <div className="flex md:flex-col space-x-4 md:space-x-0 md:space-y-4">
-              {navigationItems.map(({ to, label }) => (
+
+            {/* Internal Navigation Links */}
+            <div className="flex md:flex-col space-x-4 md:space-x-0 md:space-y-2 mb-4 md:mb-6">
+              {internalNavItems.map(({ to, label }) => (
                 <NavLink
                   key={to}
                   to={to}
                   className={({ isActive }) =>
-                    `nav-link ${isActive ? 'active' : ''}`
+                    `px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                      isActive 
+                        ? 'bg-slate-100 text-slate-900' 
+                        : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
+                    }`
                   }
                 >
                   {label}
@@ -76,15 +89,31 @@ function App() {
               ))}
             </div>
 
+            {/* External Navigation Links */}
+            <div className="hidden md:flex md:flex-col md:space-y-2 mb-6">
+              {externalNavItems.map(({ href, label, icon: Icon }) => (
+                <a
+                  key={href}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors duration-200 flex items-center gap-2"
+                >
+                  {label}
+                  <Icon size={14} />
+                </a>
+              ))}
+            </div>
+
             {/* Social Links */}
-            <div className="hidden md:flex mt-8 space-x-4">
+            <div className="hidden md:flex md:justify-start space-x-4">
               {socialLinks.map(({ href, icon: Icon, label }) => (
                 <a
                   key={href}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-slate-400 hover:text-slate-800 transition-colors duration-200"
+                  className="text-slate-400 hover:text-slate-600 transition-colors duration-200"
                   aria-label={label}
                 >
                   <Icon size={20} />
@@ -95,7 +124,7 @@ function App() {
         </nav>
 
         {/* Main Content */}
-        <main className="flex-1 p-8 md:p-16 pb-24 md:pb-16" role="main">
+        <main className="flex-1 p-6 md:p-16 pb-24 md:pb-16" role="main">
           <Routes>
             <Route path="/" element={<Navigate to="/about" replace />} />
             <Route path="/about" element={<About />} />
