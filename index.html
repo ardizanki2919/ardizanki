@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ardi Zanki</title>
 
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/favicon.png" />
 
     <!-- Meta Descriptions -->
     <meta name="description" content="Software Engineer building scalable web applications with React & Next.js" />
-    <meta name="keywords" content="Ardi Zanki, Ardizanki, Software Engineer, React Developer, Next.js Developer, Vue Developer, Nuxt Developer, Frontend Engineer, Web Developer" />
+    <meta name="keywords" content="Ardi Zanki, Ardizanki, Software Engineer, React Developer, Next.js Developer, Go Developer, Golang Developer, Backend Engineer, Web Developer" />
     <meta name="author" content="Ardi Zanki" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="canonical" href="https://ardizanki.com/" />
@@ -23,6 +28,7 @@
     <meta property="og:image" content="https://ardizanki.com/og-image.png" />
     <meta property="og:url" content="https://ardizanki.com/" />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ardi Zanki" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -31,6 +37,7 @@
     <meta name="twitter:image" content="https://ardizanki.com/og-image.png" />
     <meta name="twitter:domain" content="ardizanki.com" />
     <meta name="twitter:url" content="https://ardizanki.com/" />
+    <meta name="twitter:creator" content="@ardizanki7" />
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -54,9 +61,9 @@
         "React",
         "React Router",
         "Next.js",
-        "Vue.js",
-        "Pinia",
-        "Nuxt",
+        "Golang",
+        "Go",
+        "PostgreSQL",
         "Tailwind CSS",
         "HTML",
         "CSS",
@@ -64,19 +71,29 @@
         "TypeScript",
         "Web Developer",
         "Frontend Developer",
+        "Backend Developer",
+        "Full Stack Developer",
         "Software Engineer"
       ]
     }
     </script>
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://assets.onedollarstats.com" />
   </head>
   <body>
     <noscript>
-      <strong>You need to enable JavaScript to run this app.</strong>
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; font-family: system-ui, -apple-system, sans-serif; text-align: center; padding: 2rem;">
+        <h1 style="color: #1e293b; margin-bottom: 1rem;">JavaScript Required</h1>
+        <p style="color: #64748b; margin-bottom: 2rem;">You need to enable JavaScript to run this app.</p>
+        <a href="https://enable-javascript.com/" style="color: #3b82f6; text-decoration: underline;">How to enable JavaScript</a>
+      </div>
     </noscript>
 
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
 
+    <!-- Analytics Scripts -->
     <!-- Onedollarstats Analytics -->
     <script 
       defer 
@@ -84,17 +101,10 @@
       src="https://assets.onedollarstats.com/tracker.js">
     </script>
 
-    <!-- Onedollarstats Analytics -->
-    <script
-      defer
-      data-site-id="ardizanki.com"
-      src="https://assets.onedollarstats.com/tracker.js">
-    </script>
-
     <!-- Vercel Web Analytics -->
     <script>
       window.va = window.va || function () {
-      (window.vaq = window.vaq || []).push(arguments);
+        (window.vaq = window.vaq || []).push(arguments);
       };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
