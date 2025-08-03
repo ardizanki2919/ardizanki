@@ -3,8 +3,8 @@ function Projects() {
     'Next.js',
     'React',
     'TypeScript',
-    'Laravel',
-    'PHP',
+    'Golang',
+    'PostgreSQL',
   ];
 
   return (
