@@ -38,7 +38,7 @@ const internalNavItems = [
 const externalNavItems = [
   { 
     href: 'https://ardizanki.com/', 
-    label: 'new website',
+    label: 'new site',
     icon: ExternalLink 
   },
 ];
