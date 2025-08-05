@@ -30,15 +30,16 @@ function About() {
       
       <div className="space-y-6 text-base text-slate-600 leading-relaxed">
         <p>
-          I'm a software engineer with expertise in the React ecosystem, specializing in modern frontend development with Next.js, TypeScript, and Tailwind CSS. I'm passionate about building simple, clean, and minimalist user interfaces—with a strong emphasis on typography and visual hierarchy.
+          Hi, I'm Ardi, a Software Engineer specializing in Node.js, React, and Next.js. I focus on building scalable web apps with clean, maintainable code and modern development practices.
         </p>
-        
         <p>
-          Born in Wonogiri, Indonesia, I'm currently based in Yogyakarta. I began my journey into web development in early 2025, driven by a curiosity about user interface technologies and a passion for innovation. I focus on creating seamless user experiences through thoughtful design and clean, maintainable code.
+          Born in Wonogiri, Indonesia, I'm currently based in Yogyakarta. I recently began my journey into web development, driven by curiosity about full-stack technologies and a passion for creating efficient, user-focused solutions.
         </p>
-        
         <p>
-          Feel free to learn more about my background and interests—or connect with me on{' '}
+          My approach emphasizes simplicity, performance, and thoughtful architecture to deliver seamless user experiences from frontend to backend.
+        </p>
+        <p>
+          Connect with me on{' '}
           {socialLinks.map((link, index) => (
             <span key={link.href}>
               <a
@@ -55,7 +56,7 @@ function About() {
               )}
             </span>
           ))}
-          .
+          {' '}to learn more about my work and interests.
         </p>
       </div>
     </div>
