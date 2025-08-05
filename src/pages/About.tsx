@@ -30,16 +30,16 @@ function About() {
       
       <div className="space-y-6 text-base text-slate-600 leading-relaxed">
         <p>
-          Hi, I'm Ardi, a Software Engineer specializing in Node.js, React, and Next.js. I focus on building scalable web apps with clean, maintainable code and modern development practices.
+          I'm a Software Engineer specializing in Node.js, React, and Next.js. I focus on building scalable web applications with clean, maintainable code and modern development practices.
         </p>
         <p>
-          Born in Wonogiri, Indonesia, I'm currently based in Yogyakarta. I recently began my journey into web development, driven by curiosity about full-stack technologies and a passion for creating efficient, user-focused solutions.
+          Born in Wonogiri, Indonesia, I'm currently based in Yogyakarta, where I recently began my journey in web development, driven by curiosity about full-stack technologies and a passion for creating efficient, user-focused solutions.
         </p>
         <p>
           My approach emphasizes simplicity, performance, and thoughtful architecture to deliver seamless user experiences from frontend to backend.
         </p>
         <p>
-          Connect with me on{' '}
+          Feel free to connect with me on{' '}
           {socialLinks.map((link, index) => (
             <span key={link.href}>
               <a
@@ -56,7 +56,7 @@ function About() {
               )}
             </span>
           ))}
-          {' '}to learn more about my work and interests.
+          {' '}to explore my work and discuss web development!
         </p>
       </div>
     </div>
