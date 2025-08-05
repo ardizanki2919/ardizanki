@@ -37,7 +37,7 @@ function Thoughts() {
           <Link
             key={thought.slug}
             to={`/thoughts/${thought.slug}`}
-            className="flex justify-between items-center py-3 group hover:text-slate-800 transition-colors duration-200 rounded-md hover:bg-slate-50 px-2 -mx-2"
+            className="flex justify-between items-center py-1 group hover:text-slate-800 transition-colors duration-200 rounded-md hover:bg-slate-50 px-2 -mx-2"
             aria-label={`Read thought: ${thought.title}, published on ${formatDate(thought.date)}`}
           >
             <span className="group-hover:text-slate-800 font-medium flex-1 pr-4">
