@@ -7,16 +7,15 @@ interface Technology {
 function Projects() {
   const technologies: Technology[] = [
     { name: 'Next.js', url: 'https://nextjs.org/', category: 'framework' },
+    { name: 'Node.js', url: 'https://nodejs.org/', category: 'backend' },
     { name: 'React', url: 'https://reactjs.org/', category: 'frontend' },
-    { name: 'TypeScript', url: 'https://www.typescriptlang.org/', category: 'frontend' },
-    { name: 'PHP', url: 'https://www.php.net/', category: 'backend' },
-    { name: 'Laravel', url: 'https://laravel.com/', category: 'framework' },
     { name: 'PostgreSQL', url: 'https://www.postgresql.org/', category: 'database' },
+    { name: 'TypeScript', url: 'https://www.typescriptlang.org/', category: 'frontend' },
   ];
 
   return (
     <div className="max-w-2xl">
-      <h1 className="text-2xl font-bold mb-8 text-slate-800">Projects</h1>
+      <h1 className="text-2xl font-bold mb-8 text-slate-800">Technologies</h1>
       <div className="space-y-6 text-slate-600 leading-relaxed">
         <p className="text-base">
           I'm currently working on exciting projects that I'll be sharing soon. In the meantime, feel free to check out my work on{' '}
