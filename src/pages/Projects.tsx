@@ -32,7 +32,7 @@ function Projects() {
             href="https://github.com/ardizanki2919" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-slate-800 hover:text-slate-600 underline font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 rounded-sm"
+            className="text-slate-800 hover:text-slate-600 underline font-medium transition-colors duration-200"
             aria-label="Visit my GitHub profile to see my code repositories"
           >
             GitHub
@@ -51,7 +51,7 @@ function Projects() {
                   href={tech.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-3 text-slate-600 hover:text-slate-800 transition-all duration-200 group focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 rounded-sm p-1 -m-1"
+                  className="flex items-center space-x-3 text-slate-600 hover:text-slate-800 transition-all duration-200 group"
                   aria-label={`Learn more about ${tech.name} (${tech.category})`}
                 >
                   <div 

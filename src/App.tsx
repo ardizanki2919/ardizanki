@@ -11,7 +11,25 @@ import Thoughts from './pages/Thoughts';
 import ThoughtDetail from './pages/ThoughtDetail';
 import Projects from './pages/Projects';
 
-const socialLinks = [
+// Types for better type safety
+interface SocialLink {
+  href: string;
+  icon: React.ComponentType<{ size?: number }>;
+  label: string;
+}
+
+interface InternalNavItem {
+  to: string;
+  label: string;
+}
+
+interface ExternalNavItem {
+  href: string;
+  label: string;
+  icon: React.ComponentType<{ size?: number }>;
+}
+
+const socialLinks: SocialLink[] = [
   {
     href: 'https://x.com/ardizanki7',
     icon: Twitter,
@@ -29,13 +47,13 @@ const socialLinks = [
   },
 ];
 
-const internalNavItems = [
+const internalNavItems: InternalNavItem[] = [
   { to: '/about', label: 'about' },
   { to: '/thoughts', label: 'thoughts' },
   { to: '/projects', label: 'projects' },
 ];
 
-const externalNavItems = [
+const externalNavItems: ExternalNavItem[] = [
   { 
     href: 'https://ardizanki.com/', 
     label: 'new site',
@@ -51,6 +69,7 @@ function NotFound() {
       <NavLink 
         to="/about" 
         className="text-slate-800 hover:text-slate-600 underline transition-colors duration-200"
+        aria-label="Go back to about page"
       >
         Go back home
       </NavLink>
@@ -62,8 +81,12 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col md:flex-row">
-        {/* Sidebar */}
-        <nav className="w-full md:w-48 md:min-h-screen p-4 md:p-8 bg-white md:bg-transparent md:border-b-0" role="navigation">
+        {/* Sidebar Navigation */}
+        <nav 
+          className="w-full md:w-48 md:min-h-screen p-4 md:p-8 bg-white md:bg-transparent md:border-b-0" 
+          role="navigation"
+          aria-label="Main navigation"
+        >
           <div className="md:sticky md:top-8">
             {/* Brand/Title - Optional */}
             <div className="hidden md:block mb-8">
@@ -71,7 +94,10 @@ function App() {
             </div>
 
             {/* Internal Navigation Links */}
-            <div className="flex md:flex-col space-x-4 md:space-x-0 md:space-y-2 mb-4 md:mb-6">
+            <div 
+              className="flex md:flex-col space-x-4 md:space-x-0 md:space-y-2 mb-4 md:mb-6"
+              role="list"
+            >
               {internalNavItems.map(({ to, label }) => (
                 <NavLink
                   key={to}
@@ -83,6 +109,7 @@ function App() {
                         : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
                     }`
                   }
+                  aria-current={({ isActive }) => isActive ? 'page' : undefined}
                 >
                   {label}
                 </NavLink>
@@ -98,9 +125,10 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors duration-200 flex items-center gap-2"
+                  aria-label={`Visit ${label} (opens in new tab)`}
                 >
                   {label}
-                  <Icon size={14} />
+                  <Icon size={14} aria-hidden="true" />
                 </a>
               ))}
             </div>
@@ -114,9 +142,9 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-slate-400 hover:text-slate-600 transition-colors duration-200"
-                  aria-label={label}
+                  aria-label={`Visit my ${label} profile (opens in new tab)`}
                 >
-                  <Icon size={20} />
+                  <Icon size={20} aria-hidden="true" />
                 </a>
               ))}
             </div>
@@ -124,7 +152,11 @@ function App() {
         </nav>
 
         {/* Main Content */}
-        <main className="flex-1 p-6 md:p-16 pb-24 md:pb-16" role="main">
+        <main 
+          className="flex-1 p-6 md:p-16 pb-24 md:pb-16" 
+          role="main"
+          id="main-content"
+        >
           <Routes>
             <Route path="/" element={<Navigate to="/about" replace />} />
             <Route path="/about" element={<About />} />
