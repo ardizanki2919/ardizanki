@@ -1,18 +1,27 @@
 interface Technology {
   name: string;
   url: string;
-  category?: 'frontend' | 'backend' | 'database' | 'framework';
+  category: 'frontend' | 'backend' | 'database' | 'framework';
 }
 
-function Projects() {
-  const technologies: Technology[] = [
-    { name: 'Next.js', url: 'https://nextjs.org/', category: 'framework' },
-    { name: 'Node.js', url: 'https://nodejs.org/', category: 'backend' },
-    { name: 'React', url: 'https://reactjs.org/', category: 'frontend' },
-    { name: 'PostgreSQL', url: 'https://www.postgresql.org/', category: 'database' },
-    { name: 'TypeScript', url: 'https://www.typescriptlang.org/', category: 'frontend' },
-  ];
+// Move outside component to prevent re-creation on each render
+const technologies: Technology[] = [
+  { name: 'Next.js', url: 'https://nextjs.org/', category: 'framework' },
+  { name: 'Node.js', url: 'https://nodejs.org/', category: 'backend' },
+  { name: 'React', url: 'https://reactjs.org/', category: 'frontend' },
+  { name: 'PostgreSQL', url: 'https://www.postgresql.org/', category: 'database' },
+  { name: 'TypeScript', url: 'https://www.typescriptlang.org/', category: 'frontend' },
+];
 
+// Category colors for visual differentiation
+const categoryColors: Record<Technology['category'], string> = {
+  frontend: 'bg-blue-400',
+  backend: 'bg-green-400',
+  database: 'bg-purple-400',
+  framework: 'bg-orange-400',
+};
+
+function Projects() {
   return (
     <div className="max-w-2xl">
       <h1 className="text-2xl font-bold mb-8 text-slate-800">Technologies</h1>
@@ -23,8 +32,8 @@ function Projects() {
             href="https://github.com/ardizanki2919" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-slate-800 hover:text-slate-600 underline font-medium transition-colors duration-200"
-            aria-label="Visit my GitHub profile"
+            className="text-slate-800 hover:text-slate-600 underline font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 rounded-sm"
+            aria-label="Visit my GitHub profile to see my code repositories"
           >
             GitHub
           </a>
@@ -35,20 +44,28 @@ function Projects() {
           <p className="text-base mb-4">
             Here are some of my favorite technologies that I use in my projects:
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 ml-4">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 ml-4" role="list" aria-label="Favorite technologies list">
             {technologies.map((tech) => (
-              <a
-                key={tech.name}
-                href={tech.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-2 text-slate-600 hover:text-slate-800 transition-colors duration-200"
-              >
-                <div className="w-2 h-2 bg-slate-400 rounded-full flex-shrink-0" />
-                <span className="text-base">{tech.name}</span>
-              </a>
+              <li key={tech.name}>
+                <a
+                  href={tech.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-3 text-slate-600 hover:text-slate-800 transition-all duration-200 group focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 rounded-sm p-1 -m-1"
+                  aria-label={`Learn more about ${tech.name} (${tech.category})`}
+                >
+                  <div 
+                    className={`w-2 h-2 rounded-full flex-shrink-0 ${categoryColors[tech.category]} group-hover:scale-110 transition-transform duration-200`}
+                    aria-hidden="true"
+                  />
+                  <span className="text-base group-hover:underline">{tech.name}</span>
+                  <span className="text-xs text-slate-400 capitalize hidden sm:inline">
+                    {tech.category}
+                  </span>
+                </a>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
 
         <div className="pt-4 border-t border-slate-200">
