@@ -1,7 +1,7 @@
 interface Technology {
   name: string;
   url: string;
-  category: 'frontend' | 'backend' | 'database' | 'framework';
+  category: 'language' | 'frontend' | 'backend' | 'database' | 'framework';
 }
 
 // Move outside component to prevent re-creation on each render
@@ -10,15 +10,16 @@ const technologies: Technology[] = [
   { name: 'Node.js', url: 'https://nodejs.org/', category: 'backend' },
   { name: 'React', url: 'https://reactjs.org/', category: 'frontend' },
   { name: 'PostgreSQL', url: 'https://www.postgresql.org/', category: 'database' },
-  { name: 'TypeScript', url: 'https://www.typescriptlang.org/', category: 'frontend' },
+  { name: 'TypeScript', url: 'https://www.typescriptlang.org/', category: 'language' },
 ];
 
 // Category colors for visual differentiation
 const categoryColors: Record<Technology['category'], string> = {
+  language: 'bg-orange-400',
   frontend: 'bg-blue-400',
   backend: 'bg-green-400',
   database: 'bg-purple-400',
-  framework: 'bg-orange-400',
+  framework: 'bg-black',
 };
 
 function Projects() {
