@@ -1,15 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { thoughts } from '../data/thoughts-data';
-
-// Interface for thought item (should match the one in Thoughts.tsx)
-interface Thought {
-  slug: string;
-  title: string;
-  date: string;
-  content: string;
-  excerpt?: string;
-}
+import type { Thought } from '../types/blog';
 
 // Utility function for date formatting (same as Thoughts.tsx)
 const formatDate = (dateString: string): string => {

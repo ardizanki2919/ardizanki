@@ -1,12 +1,6 @@
 import { Link } from 'react-router-dom';
 import { thoughts } from '../data/thoughts-data';
-
-// Interface for thought item
-interface Thought {
-  slug: string;
-  title: string;
-  date: string;
-}
+import type { Thought } from '../types/blog';
 
 // Utility function for date formatting
 const formatDate = (dateString: string): string => {
