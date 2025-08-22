@@ -6,11 +6,31 @@ interface Technology {
 
 // Move outside component to prevent re-creation on each render
 const technologies: Technology[] = [
-  { name: 'Next.js', url: 'https://nextjs.org/', category: 'framework' },
-  { name: 'Node.js', url: 'https://nodejs.org/', category: 'backend' },
-  { name: 'React', url: 'https://reactjs.org/', category: 'frontend' },
-  { name: 'PostgreSQL', url: 'https://www.postgresql.org/', category: 'database' },
-  { name: 'TypeScript', url: 'https://www.typescriptlang.org/', category: 'language' },
+  {
+    name: 'Next.js',
+    url: 'https://nextjs.org/',
+    category: 'framework'
+  },
+  {
+    name: 'Node.js',
+    url: 'https://nodejs.org/',
+    category: 'backend'
+  },
+  {
+    name: 'React',
+    url: 'https://reactjs.org/',
+    category: 'frontend'
+  },
+  {
+    name: 'Prisma',
+    url: 'https://www.prisma.io/',
+    category: 'database'
+  },
+  {
+    name: 'TypeScript',
+    url: 'https://www.typescriptlang.org/',
+    category: 'language'
+  },
 ];
 
 // Category colors for visual differentiation
