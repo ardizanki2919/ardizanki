@@ -1,8 +1,9 @@
 // Interface for thought item
 export interface Thought {
-  slug: string;
   title: string;
   date: string;
   content: string;
+  slug: string;
   excerpt?: string;
+  tags?: string[];
 }
