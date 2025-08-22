@@ -13,4 +13,14 @@ export default defineConfig({
       plugins: [postcss()],
     },
   },
+  build: {
+    rollupOptions: {
+      input: {
+        main: './index.html'
+      }
+    },
+    // Generate 404.html
+    outDir: 'dist',
+    copyPublicDir: true
+  }
 });
