@@ -75,8 +75,8 @@ function Projects() {
       
       <div className="space-y-6 text-slate-600 leading-relaxed">
         <p className="text-base">
-          I'm currently working on exciting projects that I'll be sharing soon. In the meantime, 
-          feel free to check out my work on{' '}
+          I'm currently working on some exciting projects that I'll be sharing soon. In the meantime, 
+          feel free to explore my work on{' '}
           <a 
             href="https://github.com/ardizanki2919" 
             target="_blank" 
@@ -91,7 +91,7 @@ function Projects() {
         
         <div>
           <p className="text-base mb-4">
-            Here are some of my favorite technologies that I use in my projects:
+            Here are some of my favorite technologies I use in my projects:
           </p>
           
           <ul 
@@ -105,7 +105,7 @@ function Projects() {
 
         <div className="pt-4 border-t border-slate-200">
           <p className="text-sm text-slate-500 italic">
-            Stay tuned for updates on my latest projects and open-source contributions.
+            Stay tuned for updates on my latest projects and open-source contributions!
           </p>
         </div>
       </div>
