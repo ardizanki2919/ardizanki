@@ -54,7 +54,7 @@ function About() {
       
       <div className="space-y-6 text-base text-slate-600 leading-relaxed">
         <p>
-          Hi, I'm Ardi — a Software Engineer specializing in TypeScript, React, and Next.js. 
+          Hi, I'm Ardi — a Software Engineer specializing in TypeScript, React, and Node.js. 
           I build scalable web applications with clean, maintainable code and modern development practices.
         </p>
         
