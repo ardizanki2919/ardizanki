@@ -8,18 +8,18 @@ interface SocialLink {
 const socialLinks: SocialLink[] = [
   {
     href: 'https://x.com/ardizanki7',
-    label: 'Twitter',
+    label: 'X (Twitter)',
     name: 'Twitter profile',
-  },
-  {
-    href: 'https://www.linkedin.com/in/ardizanki/',
-    label: 'LinkedIn',
-    name: 'LinkedIn profile',
   },
   {
     href: 'https://github.com/ardizanki2919',
     label: 'GitHub',
     name: 'GitHub profile',
+  },
+  {
+    href: 'https://www.linkedin.com/in/ardizanki/',
+    label: 'LinkedIn',
+    name: 'LinkedIn profile',
   },
 ];
 
@@ -55,21 +55,20 @@ function About() {
       <div className="space-y-6 text-base text-slate-600 leading-relaxed">
         <p>
           Hi, I'm Ardi — a Software Engineer specializing in TypeScript, React, and Next.js. 
-          I focus on building scalable web applications with clean, maintainable code and 
-          modern development practices.
+          I build scalable web applications with clean, maintainable code and modern development practices.
         </p>
         
         <p>
-          I'm currently based in Yogyakarta, Indonesia, where I recently began my journey 
-          in web development, driven by curiosity about modern technologies and a passion 
-          for creating efficient, user-focused solutions. My approach emphasizes simplicity, 
-          performance, and thoughtful architecture to deliver seamless user experiences.
+          Based in Yogyakarta, Indonesia, I recently started my journey in web development, 
+          driven by curiosity about modern technologies and a passion for creating efficient, 
+          user-focused solutions. My approach emphasizes simplicity, performance, and thoughtful architecture 
+          to deliver seamless user experiences.
         </p>
         
         <p>
           Feel free to connect with me on{' '}
           {renderSocialLinks(socialLinks)}
-          {' '}to explore my work and discuss web development!
+          {' '}— I’d love to share ideas and talk about web development!
         </p>
       </div>
     </div>
