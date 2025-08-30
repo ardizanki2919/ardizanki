@@ -68,7 +68,7 @@ function About() {
         <p>
           Feel free to connect with me on{' '}
           {renderSocialLinks(socialLinks)}
-          {' '}— I’d love to share ideas and talk about web development!
+          {' '}— I'd love to share ideas and talk about web development!
         </p>
       </div>
     </div>
