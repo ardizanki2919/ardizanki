@@ -55,20 +55,22 @@ function About() {
       <div className="space-y-6 text-base text-slate-600 leading-relaxed">
         <p>
           Hi, I'm Ardi — a Software Engineer specializing in TypeScript, React, and Node.js. 
-          I build scalable web applications with clean, maintainable code and modern development practices.
+          I build scalable, high-performance web applications with clean, maintainable code, 
+          applying modern practices like modular architecture, automated testing, and CI/CD integration.
         </p>
         
         <p>
-          Based in Yogyakarta, Indonesia, I recently started my journey in web development, 
-          driven by curiosity about modern technologies and a passion for creating efficient, 
-          user-focused solutions. My approach emphasizes simplicity, performance, and thoughtful architecture 
-          to deliver seamless user experiences.
+          Based in Yogyakarta, Indonesia, I started my journey in web development from a curiosity 
+          about modern technologies and a passion for building user-focused solutions. With 5 
+          years of QA experience, I bring a strong foundation in testing and software quality 
+          — now combining that background with software engineering to create reliable, well-structured 
+          products across both frontend and backend.
         </p>
         
         <p>
-          Feel free to connect with me on{' '}
+         Feel free to connect with me on{' '}
           {renderSocialLinks(socialLinks)}
-          {' '}— I'd love to share ideas and talk about web development!
+          {' '}to share ideas and discuss web development.
         </p>
       </div>
     </div>
