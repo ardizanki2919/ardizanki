@@ -30,7 +30,7 @@ export const thoughts: Thought[] = [
     title: 'What is TanStack Query',
     date: '2025-07-18',
     slug: 'what-is-query',
-    content: 'TanStack Query (formerly React Query) is a powerful data-fetching library that simplifies server state management in React applications. Think of it as your smart assistant that handles all the complexity of fetching, caching, and synchronizing data from your backend.',
+    content: 'TanStack Query (formerly React Query) is a powerful data-fetching library that simplifies server state management in React applications. It acts like a smart assistant, handling the complexity of fetching, caching, and synchronizing data from your backend.',
     excerpt: 'Master TanStack Query, the data-fetching library that simplifies server state management with intelligent caching and synchronization.',
     tags: ['TanStack Query', 'Data Fetching', 'State Management']
   },
