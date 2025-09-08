@@ -1,23 +1,28 @@
 # 👋 Hello, World!
 
-My name is **Ardi Zanki**, and I'm a Software Engineer who specializes in the React ecosystem. I'm currently based in Yogyakarta, Indonesia, but I'm open to remote opportunities worldwide.
+I'm **Ardi Zanki**, a Software Engineer specializing in the React ecosystem. 
+Based in Yogyakarta, Indonesia — open to remote opportunities worldwide.
 
 ## 🚀 What I Do
 
-I build scalable web applications using modern technologies:
-- **Frontend**: React, Next.js
-- **Styling**: Tailwind CSS, CSS, HTML
-- **Languages**: JavaScript, TypeScript
-- **Routing**: React Router
+I build scalable and maintainable web applications with modern technologies:
+
+- **Languages:** JavaScript, TypeScript
+- **UI Library:** React
+- **React Framework:** Next.js, React Router v7
+- **Styling:** Tailwind CSS, CSS, HTML
+ 
 
 ## 🌐 Let's Connect
 
-Follow me on [X (Twitter)](https://x.com/ardizanki7) where I share insights about tech, career growth, and life as a software engineer. I enjoy connecting with fellow developers and discussing the latest in web development.
+Follow me on [X](https://x.com/ardizanki7), where I share insights on technology, career growth, and life as a software engineer. 
+I enjoy connecting with fellow developers and exploring the latest trends in web development.
 
-You can also find me on:
-- [GitHub](https://github.com/ardizanki2919) - Check out my projects
-- [LinkedIn](https://www.linkedin.com/in/ardizanki/) - Professional networking
+You can also find me here:
+- [GitHub](https://github.com/ardizanki2919) – Explore my projects
+- [LinkedIn](https://www.linkedin.com/in/ardizanki/) – Professional networking
 
 ## 📫 Get in Touch
 
-Whether you're looking for collaboration, have questions about my work, or just want to chat about tech, feel free to reach out through any of the platforms above!
+Interested in collaborating, curious about my work, or just want to chat about tech? 
+Feel free to reach out!
