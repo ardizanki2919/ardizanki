@@ -7,14 +7,14 @@ interface Technology {
 // Move outside component to prevent re-creation on each render
 const technologies: Technology[] = [
   {
-    name: 'Next.js',
-    url: 'https://nextjs.org/',
-    category: 'framework'
+    name: 'JavaScript',
+    url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+    category: 'language'
   },
   {
-    name: 'Node.js',
-    url: 'https://nodejs.org/',
-    category: 'backend'
+    name: 'TypeScript',
+    url: 'https://www.typescriptlang.org/',
+    category: 'language'
   },
   {
     name: 'React',
@@ -22,25 +22,16 @@ const technologies: Technology[] = [
     category: 'frontend'
   },
   {
-    name: 'Prisma',
-    url: 'https://www.prisma.io/',
-    category: 'database'
+    name: 'Next.js',
+    url: 'https://nextjs.org/',
+    category: 'framework'
   },
   {
-    name: 'TypeScript',
-    url: 'https://www.typescriptlang.org/',
-    category: 'language'
+    name: 'React Router',
+    url: 'https://reactrouter.com/',
+    category: 'framework'
   },
 ];
-
-// Category colors for visual differentiation
-const categoryColors: Record<Technology['category'], string> = {
-  language: 'bg-orange-400',
-  frontend: 'bg-blue-400',
-  backend: 'bg-green-400',
-  database: 'bg-purple-400',
-  framework: 'bg-slate-800',
-};
 
 // Extract technology rendering logic for better maintainability
 const renderTechnology = (tech: Technology) => (
@@ -53,7 +44,7 @@ const renderTechnology = (tech: Technology) => (
       aria-label={`Learn more about ${tech.name} (${tech.category})`}
     >
       <div 
-        className={`w-2 h-2 rounded-full flex-shrink-0 ${categoryColors[tech.category]} group-hover:scale-110 transition-transform duration-200`}
+        className="w-2 h-2 rounded-full flex-shrink-0 bg-slate-800 group-hover:scale-110 transition-transform duration-200"
         aria-hidden="true"
       />
       <span className="text-base group-hover:underline">
