@@ -61,10 +61,10 @@ function About() {
         
         <p>
           Based in Yogyakarta, Indonesia, I started my journey in web development from a curiosity 
-          about modern technologies and a passion for building user-focused solutions. With 5 
-          years of QA experience, I bring a strong foundation in testing and software quality 
-          — now combining that background with software engineering to create reliable, well-structured 
-          products across both frontend and backend.
+          about modern technologies and a passion for building user-focused solutions. With six years 
+          of QA experience, I bring a strong foundation in testing and software quality — now combining 
+          that background with software engineering to create reliable, well-structured products 
+          across both frontend and backend.
         </p>
         
         <p>
