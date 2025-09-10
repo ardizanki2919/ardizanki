@@ -61,13 +61,13 @@ function Projects() {
   return (
     <div className="max-w-2xl">
       <h1 className="text-2xl font-bold mb-8 text-slate-800">
-        Technologies
+        Projects
       </h1>
       
       <div className="space-y-6 text-slate-600 leading-relaxed">
         <p className="text-base">
           I'm currently working on some exciting projects that I'll be sharing soon. In the meantime, 
-          you're welcome to explore my work on{' '}
+          feel free to explore my work on{' '}
           <a 
             href="https://github.com/ardizanki2919" 
             target="_blank" 

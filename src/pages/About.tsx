@@ -49,28 +49,28 @@ function About() {
   return (
     <div className="max-w-2xl">
       <h1 className="text-2xl font-bold mb-8 text-slate-800">
-        Ardi Zanki
+        Hey hey, I'm Ardi!
       </h1>
       
       <div className="space-y-6 text-base text-slate-600 leading-relaxed">
         <p>
-          Hi, I'm Ardi — a Software Engineer specializing in TypeScript, React, and Next.js. 
+          I'm a Software Engineer specializing in JavaScript, TypeScript, and React. 
           I build scalable, high-performance web applications with clean, maintainable code, 
-          applying modern practices like modular architecture, automated testing, and CI/CD integration.
+          applying modern practices such as modular architecture, automated testing, and CI/CD integration.
         </p>
         
         <p>
-          Based in Yogyakarta, Indonesia, I started my journey in web development from a curiosity 
-          about modern technologies and a passion for building user-focused solutions. With six years 
+          Based in Yogyakarta, Indonesia, I began my journey in web development driven by curiosity 
+          about modern technologies and a passion for crafting user-focused solutions. With six years 
           of QA experience, I bring a strong foundation in testing and software quality — now combining 
-          that background with software engineering to create reliable, well-structured products 
-          across both frontend and backend.
+          that background with software engineering to create reliable, well-structured products across 
+          both frontend and backend.
         </p>
         
         <p>
          Feel free to connect with me on{' '}
           {renderSocialLinks(socialLinks)}
-          {' '}to share ideas and discuss web development.
+          {' '}to exchange ideas and explore web development together.
         </p>
       </div>
     </div>
