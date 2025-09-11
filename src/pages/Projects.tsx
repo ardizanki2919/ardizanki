@@ -22,14 +22,24 @@ const technologies: Technology[] = [
     category: 'frontend'
   },
   {
+    name: 'React Router',
+    url: 'https://reactrouter.com/',
+    category: 'framework'
+  },
+  {
     name: 'Next.js',
     url: 'https://nextjs.org/',
     category: 'framework'
   },
   {
-    name: 'React Router',
-    url: 'https://reactrouter.com/',
-    category: 'framework'
+    name: 'PostgreSQL',
+    url: 'https://www.postgresql.org/',
+    category: 'database'
+  },
+  {
+    name: 'GraphQL',
+    url: 'https://graphql.org/',
+    category: 'database'
   },
 ];
 
