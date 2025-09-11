@@ -34,4 +34,12 @@ export const thoughts: Thought[] = [
     excerpt: 'Master TanStack Query, the data-fetching library that simplifies server state management with intelligent caching and synchronization.',
     tags: ['TanStack Query', 'Data Fetching', 'State Management']
   },
+  {
+    title: 'What is React Router',
+    date: '2025-08-22',
+    slug: 'what-is-router',
+    content: 'React Router is a multi-strategy router for React bridging the gap from React 18 to React 19. You can use it maximally as a React framework or as minimally as you want. There are three primary modes for using it in your app: Declarative, Data, and Framework.',
+    excerpt: 'Understand React Router, a routing library that enables dynamic navigation and declarative routing in React applications.',
+    tags: ['React Router', 'Data Fetching', 'State Management', 'Routing', 'Framework']
+  },
 ];
