@@ -56,13 +56,13 @@ function About() {
         <p>
           I'm a Software Engineer specializing in JavaScript, TypeScript, and React. 
           I build scalable, high-performance web applications with clean, maintainable code, 
-          applying modern practices such as modular architecture, automated testing, and CI/CD integration.
+          applying modern practices like modular architecture, automated testing, and CI/CD integration.
         </p>
         
         <p>
-          Based in Yogyakarta, Indonesia, I began my journey in web development driven by curiosity 
-          about modern technologies and a passion for crafting user-focused solutions. With six years 
-          of QA experience, I bring a strong foundation in testing and software quality — now combining 
+          Based in Yogyakarta, Indonesia, I started my journey in web development out of curiosity 
+          for modern technologies and a passion for crafting user-focused solutions. With six years 
+          of QA experience, I bring a solid foundation in testing and software quality — now combining 
           that background with software engineering to create reliable, well-structured products across 
           both frontend and backend.
         </p>
