@@ -36,11 +36,6 @@ const technologies: Technology[] = [
     url: 'https://www.postgresql.org/',
     category: 'database'
   },
-  {
-    name: 'GraphQL',
-    url: 'https://graphql.org/',
-    category: 'database'
-  },
 ];
 
 // Extract technology rendering logic for better maintainability
