@@ -3,7 +3,7 @@ import type { Thought } from '../types/blog';
 
 export const thoughts: Thought[] = [
   {
-    title: 'What is React',
+    title: 'What is React?',
     date: '2025-04-15',
     slug: 'what-is-react',
     content: 'React is a JavaScript library for building user interfaces, created by Facebook (now Meta) in 2013. It revolutionized web development by introducing a component-based architecture and the concept of the Virtual DOM.',
@@ -11,7 +11,7 @@ export const thoughts: Thought[] = [
     tags: ['React', 'JavaScript', 'Frontend']
   },
   {
-    title: 'What is Next.js',
+    title: 'What is Next.js?',
     date: '2025-05-17',
     slug: 'what-is-nextjs',
     content: 'Next.js is a React framework that provides everything you need to build production-ready web applications. While React is a library for building user interfaces, Next.js is a complete framework that handles routing, bundling, optimization, and deployment.',
@@ -19,7 +19,7 @@ export const thoughts: Thought[] = [
     tags: ['Next.js', 'React', 'Framework']
   },
   {
-    title: 'What is Tailwind CSS',
+    title: 'What is Tailwind CSS?',
     date: '2025-06-21',
     slug: 'what-is-tailwindcss',
     content: 'Tailwind CSS is a utility-first CSS framework that lets you build custom designs directly in your HTML without writing custom CSS. Instead of pre-designed components, Tailwind provides low-level utility classes that you can combine to create any design.',
@@ -27,7 +27,7 @@ export const thoughts: Thought[] = [
     tags: ['Tailwind CSS', 'CSS', 'Framework']
   },
   {
-    title: 'What is TanStack Query',
+    title: 'What is TanStack Query?',
     date: '2025-07-18',
     slug: 'what-is-query',
     content: 'TanStack Query (formerly React Query) is a powerful data-fetching library that simplifies server state management in React applications. It acts like a smart assistant, handling the complexity of fetching, caching, and synchronizing data from your backend.',
@@ -35,7 +35,7 @@ export const thoughts: Thought[] = [
     tags: ['TanStack Query', 'Data Fetching', 'State Management']
   },
   {
-    title: 'What is React Router',
+    title: 'What is React Router v7?',
     date: '2025-08-22',
     slug: 'what-is-router',
     content: 'React Router is a multi-strategy router for React bridging the gap from React 18 to React 19. You can use it maximally as a React framework or as minimally as you want. There are three primary modes for using it in your app: Declarative, Data, and Framework.',
