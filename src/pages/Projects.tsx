@@ -1,7 +1,7 @@
 interface Technology {
   name: string;
   url: string;
-  category: 'language' | 'frontend' | 'backend' | 'database' | 'framework' | 'styling';
+  category: 'language' | 'frontend' | 'backend' | 'database' | 'framework' | 'styling' | 'state management';
 }
 
 // Move outside component to prevent re-creation on each render
@@ -27,9 +27,9 @@ const technologies: Technology[] = [
     category: 'framework'
   },
   {
-    name: 'Next.js',
-    url: 'https://nextjs.org/',
-    category: 'framework'
+    name: 'Redux Toolkit',
+    url: 'https://redux-toolkit.js.org/',
+    category: 'state management'
   },
   {
     name: 'Tailwind CSS',
