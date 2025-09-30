@@ -9,7 +9,7 @@ I build scalable and maintainable web applications with modern technologies:
 
 - **Languages:** JavaScript, TypeScript
 - **UI Library:** React
-- **React Framework:** Next.js, React Router v7
+- **React Framework:** React Router v7, TanStack Start
 - **Styling:** Tailwind CSS, CSS, HTML
  
 
