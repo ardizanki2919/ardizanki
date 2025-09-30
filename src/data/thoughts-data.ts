@@ -4,7 +4,7 @@ import type { Thought } from '../types/blog';
 export const thoughts: Thought[] = [
   {
     title: 'What is React?',
-    date: '2025-05-17',
+    date: '2025-05-19',
     slug: 'what-is-react',
     content: 'React is a JavaScript library for building user interfaces, created by Facebook (now Meta) in 2013. It revolutionized web development by introducing a component-based architecture and the concept of the Virtual DOM.',
     excerpt: 'Learn about React, the JavaScript library that revolutionized web development with component-based architecture and Virtual DOM.',
@@ -28,7 +28,7 @@ export const thoughts: Thought[] = [
   },
   {
     title: 'What is TanStack Query?',
-    date: '2025-08-18',
+    date: '2025-08-17',
     slug: 'what-is-query',
     content: 'TanStack Query (formerly React Query) is a powerful data-fetching library that simplifies server state management in React applications. It acts like a smart assistant, handling the complexity of fetching, caching, and synchronizing data from your backend.',
     excerpt: 'Master TanStack Query, the data-fetching library that simplifies server state management with intelligent caching and synchronization.',
