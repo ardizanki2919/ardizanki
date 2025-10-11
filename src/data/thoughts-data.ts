@@ -19,12 +19,12 @@ export const thoughts: Thought[] = [
     tags: ['React Router', 'Data Fetching', 'State Management', 'Routing', 'Framework']
   },
   {
-    title: 'What is Redux Toolkit?',
+    title: 'What is Remix 3?',
     date: '2025-07-24',
-    slug: 'what-is-redux',
-    content: 'Redux Toolkit is the official, opinionated, batteries-included toolset for efficient Redux development. It simplifies common Redux tasks, reduces boilerplate code, and provides powerful utilities for creating and managing state in React applications.',
-    excerpt: 'Discover Redux Toolkit, the official, opinionated, batteries-included toolset for efficient Redux development and state management.',
-    tags: ['Redux', 'Redux Toolkit', 'React Reduxt', 'State Management', 'Data Fetching']
+    slug: 'what-is-remix',
+    content: 'Remix 3 is a reimagining of what a web framework can be; a fresh foundation shaped by decades of experience building for the web. Our focus is on simplicity, clarity, and performance, without giving up the power developers need. Its a modular toolkit that works well together but can also stand on its own, from first-class database drivers to a built-in component library.',
+    excerpt: 'Discover Remix 3, a fresh foundation shaped by decades of experience building for the web. Our focus is on simplicity, clarity, and performance, without giving up the power developers need.',
+    tags: ['Remix run', 'Remix', 'Routing', 'State Management', 'Data Fetching', 'Framework']
   },
   {
     title: 'What is TanStack Query?',
