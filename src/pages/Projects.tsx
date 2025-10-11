@@ -1,7 +1,7 @@
 interface Technology {
   name: string;
   url: string;
-  category: 'language' | 'frontend' | 'backend' | 'database' | 'framework' | 'styling' | 'state management';
+  category: 'language' | 'frontend' | 'backend' | 'database' | 'framework' | 'styling' | 'state management' | 'testing';
 }
 
 // Move outside component to prevent re-creation on each render
@@ -27,14 +27,24 @@ const technologies: Technology[] = [
     category: 'framework'
   },
   {
-    name: 'Redux Toolkit',
-    url: 'https://redux-toolkit.js.org/',
-    category: 'state management'
+    name: 'Remix',
+    url: 'https://remix.run/',
+    category: 'framework'
   },
   {
     name: 'Tailwind CSS',
     url: 'https://tailwindcss.com/',
     category: 'styling'
+  },
+  {
+    name: 'Vitest',
+    url: 'https://vitest.dev/',
+    category: 'testing'
+  },
+  {
+    name: 'Playwright',
+    url: 'https://playwright.dev/',
+    category: 'testing'
   },
   {
     name: 'PostgreSQL',
