@@ -1,7 +1,7 @@
 interface Technology {
   name: string;
   url: string;
-  category: 'language' | 'frontend' | 'backend' | 'database' | 'framework';
+  category: 'language' | 'frontend' | 'backend' | 'database' | 'framework' | 'styling' | 'state management';
 }
 
 // Move outside component to prevent re-creation on each render
@@ -22,14 +22,14 @@ const technologies: Technology[] = [
     category: 'frontend'
   },
   {
-    name: 'Next.js',
-    url: 'https://nextjs.org/',
-    category: 'framework'
-  },
-  {
     name: 'React Router',
     url: 'https://reactrouter.com/',
     category: 'framework'
+  },
+  {
+    name: 'Tailwind CSS',
+    url: 'https://tailwindcss.com/',
+    category: 'styling'
   },
 ];
 
