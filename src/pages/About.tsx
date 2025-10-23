@@ -49,22 +49,20 @@ function About() {
   return (
     <div className="max-w-2xl">
       <h1 className="text-2xl font-bold mb-8 text-slate-800">
-        Hey hey, I'm Ardi!
+        Hey hey!
       </h1>
       
       <div className="space-y-6 text-base text-slate-600 leading-relaxed">
         <p>
-          I'm a Software Engineer specializing in JavaScript, TypeScript, and React. 
-          I build scalable, high-performance web applications with clean, maintainable code, 
-          applying modern practices such as modular architecture, automated testing, and CI/CD integration.
+          I'm Ardi, a QA Engineer with 6 years of hands-on experience in both manual and automated testing. 
+          My expertise includes API testing with Postman, end-to-end testing with Playwright, CI/CD 
+          automation with GitHub Actions, database validation using SQL, and organizing structured test cases using spreadsheets.
         </p>
         
         <p>
-          Based in Yogyakarta, Indonesia, I began my journey in web development driven by curiosity 
-          about modern technologies and a passion for crafting user-focused solutions. With six years 
-          of QA experience, I bring a strong foundation in testing and software quality — now combining 
-          that background with software engineering to create reliable, well-structured products across 
-          both frontend and backend.
+          Currently, alongside my work as a QA Engineer, I'm transitioning into Software Engineering to build 
+          modern and scalable web applications. In my spare time, I enjoy working on personal projects using 
+          HTML, CSS, JavaScript, TypeScript, and React.
         </p>
         
         <p>
