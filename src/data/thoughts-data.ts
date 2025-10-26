@@ -11,7 +11,7 @@ export const thoughts: Thought[] = [
     tags: ['React', 'JavaScript', 'Frontend']
   },
   {
-    title: 'What is React Router v7?',
+    title: 'What is React Router?',
     date: '2025-06-21',
     slug: 'what-is-router',
     content: 'React Router is a multi-strategy router for React bridging the gap from React 18 to React 19. You can use it maximally as a React framework or as minimally as you want. There are three primary modes for using it in your app: Declarative, Data, and Framework.',
