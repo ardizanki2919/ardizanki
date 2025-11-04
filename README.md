@@ -1,6 +1,7 @@
 # 👋 Hello, World!
 
 I'm **Ardi Zanki**, a Software Engineer specializing in Laravel, React, and Vue. 
+
 Based in Yogyakarta, Indonesia — open to remote opportunities worldwide.
 
 ## 🚀 What I Do
