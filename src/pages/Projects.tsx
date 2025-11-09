@@ -1,16 +1,11 @@
 interface Technology {
   name: string;
   url: string;
-  category: 'language' | 'frontend' | 'backend' | 'database' | 'framework';
+  category: 'language' | 'frontend library' | 'data fetching' | 'framework' | 'styling' | 'backend' | 'database' | 'testing';
 }
 
 // Move outside component to prevent re-creation on each render
 const technologies: Technology[] = [
-  {
-    name: 'JavaScript',
-    url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-    category: 'language'
-  },
   {
     name: 'TypeScript',
     url: 'https://www.typescriptlang.org/',
@@ -19,24 +14,43 @@ const technologies: Technology[] = [
   {
     name: 'React',
     url: 'https://reactjs.org/',
-    category: 'frontend'
+    category: 'frontend library'
   },
   {
-    name: 'Vue',
-    url: 'https://vuejs.org/',
-    category: 'frontend'
+    name: 'React Router v7',
+    url: 'https://reactrouter.com/',
+    category: 'framework'
   },
   {
-    name: 'PHP',
-    url: 'https://php.net/',
-    category: 'language'
+    name: 'TanStack Start',
+    url: 'https://tanstack.com/start/',
+    category: 'framework'
   },
   {
-    name: 'Laravel',
-    url: 'https://laravel.com/',
+    name: 'TanStack Query',
+    url: 'https://tanstack.com/query/',
+    category: 'data fetching'
+  },
+  {
+    name: 'Tailwind CSS',
+    url: 'https://tailwindcss.com/',
+    category: 'styling'
+  },
+  {
+    name: 'Node.js',
+    url: 'https://nodejs.org/',
     category: 'backend'
   },
-
+  {
+    name: 'Vitest',
+    url: 'https://vitest.dev/',
+    category: 'testing'
+  },
+  {
+    name: 'Playwright',
+    url: 'https://playwright.dev/',
+    category: 'testing'
+  },
 ];
 
 // Extract technology rendering logic for better maintainability
