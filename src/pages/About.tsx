@@ -54,19 +54,18 @@ function About() {
       
       <div className="space-y-6 text-base text-slate-600 leading-relaxed">
         <p>
-          I'm Ardi, a QA Engineer with 6 years of hands-on experience in both manual and automated testing. 
-          My expertise includes API testing with Postman, end-to-end testing with Playwright, CI/CD 
-          automation with GitHub Actions, database validation using SQL, and organizing structured test cases using spreadsheets.
+          I'm Ardi, a QA Engineer with 5 years of hands-on experience in both manual and automated testing. 
+          My expertise includes API testing with Postman, end-to-end testing with Playwright, and CI/CD automation with GitHub Actions. 
+          I also have experience with database validation using SQL and organizing test cases in spreadsheets.
         </p>
         
         <p>
-          Currently, alongside my work as a QA Engineer, I'm transitioning into Software Engineering to build 
-          modern and scalable web applications. In my spare time, I enjoy working on personal projects using 
-          Laravel, React, and Vue.
+          I'm currently transitioning from QA Engineering to Software Engineering to build modern and scalable web applications. 
+          In my spare time, I work on personal projects using TypeScript, React, and TanStack.
         </p>
         
         <p>
-         Feel free to connect with me on{' '}
+          Feel free to connect with me on{' '}
           {renderSocialLinks(socialLinks)}
           {' '}to exchange ideas and explore web development together.
         </p>
