@@ -1,6 +1,6 @@
 # 👋 Hello, World!
 
-I'm **Ardi Zanki**, a Software Engineer specializing in Laravel, React, and Vue. 
+I'm **Ardi Zanki**, a Software Engineer who builds scalable web applications with TypeScript, React, and TanStack.
 
 Based in Yogyakarta, Indonesia — open to remote opportunities worldwide.
 
@@ -8,21 +8,23 @@ Based in Yogyakarta, Indonesia — open to remote opportunities worldwide.
 
 I build scalable and maintainable web applications with modern technologies:
 
-- **Languages:** JavaScript, TypeScript, PHP
-- **UI Frameworks:** React, Vue
-- **Web Frameworks:** React Router v7, Nuxt
-- **Backend Framework:** Laravel
+- **Languages:** JavaScript, TypeScript
+- **UI Library:** React
+- **Routing & Frameworks:** React Router v7, TanStack Start
+- **State Management:** Zustand
+- **Data Fetching:** TanStack Query
+- **Styling:** Tailwind CSS
+- **Backend:** Node.js
 
 ## 🌐 Let's Connect
 
-Follow me on [X](https://x.com/ardizanki7), where I share insights on technology, career growth, and life as a software engineer. 
-I enjoy connecting with fellow developers and exploring the latest trends in web development.
+Follow me on [X (Twitter)](https://x.com/ardizanki7), where I share insights on web development, career growth, and life as a software engineer.
 
 You can also find me here:
 - [GitHub](https://github.com/ardizanki2919) – Explore my projects
-- [LinkedIn](https://www.linkedin.com/in/ardizanki/) – Professional networking
+- [LinkedIn](https://www.linkedin.com/in/ardizanki) – Professional networking
 
 ## 📫 Get in Touch
 
-Interested in collaborating, curious about my work, or just want to chat about tech? 
-Feel free to reach out!
+Interested in working together or discussing web development? 
+Feel free to reach out through any of the platforms above!
