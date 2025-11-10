@@ -55,7 +55,7 @@ function About() {
       <div className="space-y-6 text-base text-slate-600 leading-relaxed">
         <p>
           I'm Ardi, a QA Engineer with 5 years of hands-on experience in both manual and automated testing. 
-          My expertise includes API testing with Postman, end-to-end testing with Playwright and Cypress, and CI/CD automation with GitHub Actions. 
+          My expertise includes API testing with Postman, end-to-end testing with Playwright, and CI/CD automation with GitHub Actions. 
           I also have experience with database validation using SQL and organizing test cases in spreadsheets.
         </p>
         

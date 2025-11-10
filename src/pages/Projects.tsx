@@ -1,11 +1,16 @@
 interface Technology {
   name: string;
   url: string;
-  category: 'language' | 'frontend library' | 'data fetching' | 'framework' | 'styling' | 'backend' | 'database' | 'testing';
+  category: 'language' | 'frontend library' | 'state management' | 'data fetching' | 'framework' | 'styling' | 'backend' | 'database' | 'testing';
 }
 
 // Move outside component to prevent re-creation on each render
 const technologies: Technology[] = [
+  {
+    name: 'JavaScript',
+    url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+    category: 'language'
+  },
   {
     name: 'TypeScript',
     url: 'https://www.typescriptlang.org/',
@@ -20,6 +25,11 @@ const technologies: Technology[] = [
     name: 'React Router v7',
     url: 'https://reactrouter.com/',
     category: 'framework'
+  },
+  {
+    name: 'Zustand',
+    url: 'https://zustand-demo.pmnd.rs/',
+    category: 'state management'
   },
   {
     name: 'TanStack Query',
