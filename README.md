@@ -1,6 +1,6 @@
 # 👋 Hello, World!
 
-I'm **Ardi Zanki**, a Software Engineer who builds scalable web applications with TypeScript, React, and TanStack.
+I'm **Ardi Zanki**, a Software Engineer specializing in building scalable web applications using TypeScript and React.
 
 Based in Yogyakarta, Indonesia — open to remote opportunities worldwide.
 
@@ -10,11 +10,10 @@ I build scalable and maintainable web applications with modern technologies:
 
 - **Languages:** JavaScript, TypeScript
 - **UI Library:** React
-- **Routing & Frameworks:** React Router v7, TanStack Start
+- **Routing & Frameworks:** React Router v7, Next.js
 - **State Management:** Zustand
 - **Data Fetching:** TanStack Query
 - **Styling:** Tailwind CSS
-- **Backend:** Node.js
 
 ## 🌐 Let's Connect
 
