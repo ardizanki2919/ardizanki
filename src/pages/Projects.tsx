@@ -22,11 +22,6 @@ const technologies: Technology[] = [
     category: 'framework'
   },
   {
-    name: 'TanStack Start',
-    url: 'https://tanstack.com/start/',
-    category: 'framework'
-  },
-  {
     name: 'TanStack Query',
     url: 'https://tanstack.com/query/',
     category: 'data fetching'
@@ -35,11 +30,6 @@ const technologies: Technology[] = [
     name: 'Tailwind CSS',
     url: 'https://tailwindcss.com/',
     category: 'styling'
-  },
-  {
-    name: 'Node.js',
-    url: 'https://nodejs.org/',
-    category: 'backend'
   },
   {
     name: 'Vitest',

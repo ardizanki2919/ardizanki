@@ -79,7 +79,7 @@ function ThoughtDetail() {
       document.title = 'Ardi Zanki';
       const metaDescription = document.querySelector('meta[name="description"]');
       if (metaDescription) {
-        metaDescription.setAttribute('content', 'Software Engineer specializing in TypeScript, React, and TanStack');
+        metaDescription.setAttribute('content', 'Software Engineer specializing in TypeScript and React');
       }
     };
   }, [post]);
