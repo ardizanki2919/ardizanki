@@ -2,18 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
+    <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Ardi Zanki</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+
+    <!-- Preload Important Assets -->
+    <link rel="preload" as="image" href="og-image.png" />
+
+    <!-- Theme Colors -->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)" />
 
     <!-- Meta Descriptions -->
     <meta name="description" content="Software Engineer specializing in TypeScript and React" />
     <meta name="author" content="Ardi Zanki" />
-    <meta name="theme-color" content="#ffffff" />
     <link rel="canonical" href="https://ardizanki.com/" />
 
     <!-- Open Graph -->
@@ -51,68 +60,32 @@
         "https://www.instagram.com/ardi.zanki/"
       ],
       "knowsAbout": [
-        "Ardi Zanki",
-        "ardizanki",
-        "Portfolio",
-        "Personal Website",
-        "HTML",
-        "CSS",
         "JavaScript",
         "TypeScript",
         "React",
         "React Router",
-        "React Router v7",
-        "Zustand",
-        "Redux",
-        "Redux Toolkit",
-        "TanStack Query",
         "Next.js",
-        "Shadcn UI",
-        "Radix UI",
-        "Base UI",
-        "Ant Design",
         "Frontend Engineer",
         "Design Engineer",
         "Backend Engineer",
         "Full Stack Engineer",
         "Software Engineer",
         "Product Engineer",
-        "Web Developer",
-        "React Developer",
-        "Rails Developer",
         "Node.js",
         "Express.js",
-        "Ruby",
-        "Ruby on Rails",
-        "Rails",
-        "Hotwire",
         "Python",
         "FastAPI",
-        "Pydantic",
-        "PostgreSQL",
-        "GraphQL",
-        "Apollo GraphQL",
-        "Redis",
-        "Docker",
-        "Webpack",
-        "Turbopack",
-        "Jest",
-        "Vite",
-        "Vitest",
         "Playwright",
-        "Postman",
-        "k6",
         "Software Tester",
         "QA Engineer",
-        "Quality Assurance Engineer",
+        "Software Quality Assurance",
         "Test Engineer",
-        "SDET"
       ]
     }
     </script>
 
-    <!-- Preconnect for Performance -->
-    <link rel="dns-prefetch" href="https://vercel.com" />
+    <!-- Preconnect for Analytics -->
+    <link rel="preconnect" href="https://vercel.com" crossorigin />
   </head>
   <body>
     <noscript>
@@ -124,10 +97,11 @@
     </noscript>
 
     <div id="root"></div>
+
+    <!-- Vite bundled script -->
     <script type="module" src="/src/main.tsx"></script>
 
-    <!-- Analytics Scripts -->
-    <!-- Vercel Web Analytics -->
+    <!-- Vercel Analytics -->
     <script>
       window.va = window.va || function () {
         (window.vaq = window.vaq || []).push(arguments);
