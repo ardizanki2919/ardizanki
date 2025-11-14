@@ -4,45 +4,40 @@ interface SocialLink {
   name: string;
 }
 
-// Move outside component to prevent re-creation on each render
+// Static data — defined outside component to avoid re-renders
 const socialLinks: SocialLink[] = [
-  {
-    href: 'https://x.com/ardizanki7',
-    label: 'X (Twitter)',
-    name: 'Twitter profile',
-  },
-  {
-    href: 'https://github.com/ardizanki2919',
-    label: 'GitHub',
-    name: 'GitHub profile',
-  },
-  {
-    href: 'https://www.linkedin.com/in/ardizanki/',
-    label: 'LinkedIn',
-    name: 'LinkedIn profile',
-  },
+  { href: 'https://x.com/ardizanki7', label: 'X (Twitter)', name: 'Twitter profile' },
+  { href: 'https://github.com/ardizanki2919', label: 'GitHub', name: 'GitHub profile' },
+  { href: 'https://www.linkedin.com/in/ardizanki/', label: 'LinkedIn', name: 'LinkedIn profile' },
 ];
 
-// Extract link formatting logic for better readability and maintainability
+// Improved link renderer — cleaner, fewer wrappers, more readable
 const renderSocialLinks = (links: SocialLink[]): React.ReactNode => {
-  return links.map((link, index) => (
-    <span key={link.href}>
-      <a
-        href={link.href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-slate-800 hover:text-slate-600 underline font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-1 rounded-sm"
-        aria-label={`Visit my ${link.name}`}
-      >
-        {link.label}
-      </a>
-      {index < links.length - 1 && (
-        <span className="text-slate-600">
-          {index === links.length - 2 ? ', or ' : ', '}
-        </span>
-      )}
-    </span>
-  ));
+  return links.map((link, index) => {
+    const isLast = index === links.length - 1;
+    const isSecondLast = index === links.length - 2;
+
+    return (
+      <span key={link.href}>
+        <a
+          href={link.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-slate-800 hover:text-slate-600 underline font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-1 rounded-sm"
+          aria-label={`Visit my ${link.name}`}
+        >
+          {link.label}
+        </a>
+
+        {/* separator logic */}
+        {!isLast && (
+          <span className="text-slate-600">
+            {isSecondLast ? ", or " : ", "}
+          </span>
+        )}
+      </span>
+    );
+  });
 };
 
 function About() {
@@ -51,19 +46,19 @@ function About() {
       <h1 className="text-2xl font-bold mb-8 text-slate-800">
         Hi there 👋
       </h1>
-      
+
       <div className="space-y-6 text-base text-slate-600 leading-relaxed">
         <p>
-          I'm Ardi, a QA Engineer with 5 years of hands-on experience in both manual and automated testing. 
-          My expertise includes API testing with Postman, end-to-end testing with Playwright, and CI/CD automation with GitHub Actions. 
+          I'm Ardi, a QA Engineer with 5 years of hands-on experience in both manual and automated testing.
+          My expertise includes API testing with Postman, end-to-end testing with Playwright, and CI/CD automation with GitHub Actions.
           I also have experience with database validation using SQL and organizing test cases in spreadsheets.
         </p>
-        
+
         <p>
-          I'm currently transitioning from QA Engineering to Software Engineering to build modern and scalable web applications. 
+          I'm currently transitioning from QA Engineering to Software Engineering to build modern and scalable web applications.
           In my spare time, I work on personal projects using TypeScript and React.
         </p>
-        
+
         <p>
           Feel free to connect with me on{' '}
           {renderSocialLinks(socialLinks)}
