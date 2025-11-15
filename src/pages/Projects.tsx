@@ -4,7 +4,6 @@ interface Technology {
   category:
   | 'language'
   | 'frontend library'
-  | 'state management'
   | 'data fetching'
   | 'framework'
   | 'styling'
@@ -14,11 +13,9 @@ interface Technology {
 }
 
 const technologies: Technology[] = [
-  { name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', category: 'language' },
   { name: 'TypeScript', url: 'https://www.typescriptlang.org/', category: 'language' },
   { name: 'React', url: 'https://reactjs.org/', category: 'frontend library' },
   { name: 'React Router v7', url: 'https://reactrouter.com/', category: 'framework' },
-  { name: 'Zustand', url: 'https://zustand-demo.pmnd.rs/', category: 'state management' },
   { name: 'TanStack Query', url: 'https://tanstack.com/query/', category: 'data fetching' },
   { name: 'Tailwind CSS', url: 'https://tailwindcss.com/', category: 'styling' },
   { name: 'Vitest', url: 'https://vitest.dev/', category: 'testing' },
