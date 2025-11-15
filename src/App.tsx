@@ -5,7 +5,7 @@ import {
   NavLink,
   Navigate,
 } from 'react-router-dom';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { ExternalLink, Github, Linkedin, Twitter } from 'lucide-react';
 import About from './pages/About';
 import Thoughts from './pages/Thoughts';
 import ThoughtDetail from './pages/ThoughtDetail';
@@ -22,6 +22,12 @@ interface InternalNavItem {
   label: string;
 }
 
+interface ExternalNavItem {
+  href: string;
+  label: string;
+  icon: React.ComponentType<{ size?: number }>;
+}
+
 const socialLinks: SocialLink[] = [
   { href: 'https://x.com/ardizanki7', icon: Twitter, label: 'Twitter' },
   { href: 'https://www.linkedin.com/in/ardizanki/', icon: Linkedin, label: 'LinkedIn' },
@@ -34,6 +40,14 @@ const internalNavItems: InternalNavItem[] = [
   { to: '/projects', label: 'projects' },
 ];
 
+const externalNavItems: ExternalNavItem[] = [
+  {
+    href: 'https://cv.ardizanki.com/',
+    label: 'CV',
+    icon: ExternalLink,
+  },
+];
+
 function NotFound() {
   return (
     <div className="flex flex-col items-center justify-center min-h-[400px] text-center">
@@ -44,7 +58,6 @@ function NotFound() {
       <NavLink
         to="/about"
         className="text-slate-800 hover:text-slate-600 underline transition-colors duration-200"
-        aria-label="Go back to about page"
       >
         Go back home
       </NavLink>
@@ -56,6 +69,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col md:flex-row">
+        
         {/* Sidebar Navigation */}
         <nav
           className="w-full md:w-48 md:min-h-screen p-4 md:p-8 bg-white md:bg-transparent"
@@ -63,7 +77,41 @@ function App() {
         >
           <div className="md:sticky md:top-8">
           <div className="hidden md:block mb-8" />
-            <div className="flex md:flex-col space-x-4 md:space-x-0 md:space-y-2 mb-4 md:mb-6">
+
+            {/* Mobile Navigation (horizontal + merged internal + external) */}
+            <div className="flex items-center space-x-4 mb-6 md:hidden">
+              {internalNavItems.map(({ to, label }) => (
+                <NavLink
+                  key={to}
+                  to={to}
+                  className={({ isActive }) =>
+                    `px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                      isActive
+                        ? 'bg-slate-100 text-slate-900'
+                        : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
+                    }`
+                  }
+                >
+                  {label}
+                </NavLink>
+              ))}
+
+              {externalNavItems.map(({ href, label, icon: Icon }) => (
+                <a
+                  key={href}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors duration-200 flex items-center gap-2"
+                >
+                  {label}
+                  <Icon size={14} aria-hidden="true" />
+                </a>
+              ))}
+            </div>
+
+            {/* Desktop Navigation (vertical internal links) */}
+            <div className="hidden md:flex md:flex-col space-y-2 mb-6">
               {internalNavItems.map(({ to, label }) => (
                 <NavLink
                   key={to}
@@ -81,8 +129,24 @@ function App() {
               ))}
             </div>
 
-            {/* Social Links */}
-            <div className="hidden md:flex md:justify-start space-x-4">
+            {/* Desktop External Links (below internal) */}
+            <div className="hidden md:flex md:flex-col space-y-2 mb-6">
+              {externalNavItems.map(({ href, label, icon: Icon }) => (
+                <a
+                  key={href}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors duration-200 flex items-center gap-2"
+                >
+                  {label}
+                  <Icon size={14} aria-hidden="true" />
+                </a>
+              ))}
+            </div>
+
+            {/*  Social Links (Only desktop) */}
+            <div className="hidden md:flex space-x-4">
               {socialLinks.map(({ href, icon: Icon, label }) => (
                 <a
                   key={href}
@@ -90,12 +154,13 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-slate-400 hover:text-slate-600 transition-colors duration-200"
-                  aria-label={`Visit my ${label} profile (opens in new tab)`}
+                  aria-label={`Visit my ${label} profile`}
                 >
                   <Icon size={20} aria-hidden="true" />
                 </a>
               ))}
             </div>
+
           </div>
         </nav>
 
