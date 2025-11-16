@@ -54,8 +54,8 @@ function Projects() {
 
       <div className="space-y-6 text-slate-600 leading-relaxed">
         <p className="text-base">
-          I'm currently working on some exciting projects that I'll be sharing soon. In the meantime, feel free to
-          explore my work on{' '}
+          I'm currently working on several exciting projects that I'll be sharing soon. In the meantime, feel free 
+          to explore my work on{' '}
           <a
             href="https://github.com/ardizanki2919"
             target="_blank"
@@ -69,7 +69,7 @@ function Projects() {
 
         <div>
           <p className="text-base mb-4">
-            Here are some of my favorite technologies:
+            Here are my favorite technologies:
           </p>
 
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 ml-4" aria-label="Favorite technologies">
