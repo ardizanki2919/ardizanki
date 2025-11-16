@@ -48,19 +48,23 @@ const externalNavItems: ExternalNavItem[] = [
   },
 ];
 
-function NotFound() {
+function NotFound () {
   return (
-    <div className="flex flex-col items-center justify-center min-h-[400px] text-center">
-      <h1 className="text-4xl font-bold text-slate-800 mb-4">404</h1>
-      <p className="text-slate-600 mb-6">
-        Sorry, the page you're looking for doesn't exist.
-      </p>
-      <NavLink
+    <div className="max-w-2xl">
+      <div className="text-center py-12 text-base text-slate-600 leading-relaxed">
+        <h1 className="text-2xl font-bold text-slate-800 mb-4">
+          404
+        </h1>
+        <p>
+          Sorry, the page you're looking for doesn't exist or has been moved.
+        </p>
+        <NavLink
         to="/about"
         className="text-slate-800 hover:text-slate-600 underline transition-colors duration-200"
-      >
-        Go back home
-      </NavLink>
+        >
+          Go back home
+        </NavLink>
+      </div>
     </div>
   );
 }
