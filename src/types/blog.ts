@@ -2,8 +2,8 @@
 export interface Thought {
   title: string;
   date: string;
-  content: string;
   slug: string;
-  excerpt?: string;
-  tags?: string[];
+  content: string | string[];
+  excerpt: string;
+  tags: string[];
 }

@@ -15,10 +15,11 @@ const formatDate = (dateString: string): string => {
   });
 };
 
-// Utility: estimate reading time
-const estimateReadingTime = (content: string): number => {
+// Utility: estimate reading time (updated to handle array)
+const estimateReadingTime = (content: string | string[]): number => {
   const wordsPerMinute = 200;
-  const words = content.trim().split(/\s+/).filter(Boolean).length;
+  const text = Array.isArray(content) ? content.join(' ') : content;
+  const words = text.trim().split(/\s+/).filter(Boolean).length;
   return Math.max(1, Math.ceil(words / wordsPerMinute));
 };
 
@@ -58,6 +59,19 @@ const NotFoundState = () => (
     </div>
   </div>
 );
+
+// New utility: render content paragraphs
+const renderContent = (content: string | string[]) => {
+  if (Array.isArray(content)) {
+    return content.map((paragraph, index) => (
+      <p key={index} className="text-base">
+        {paragraph}
+      </p>
+    ));
+  }
+  
+  return <p className="text-base">{content}</p>;
+};
 
 function ThoughtDetail() {
   const { slug } = useParams<{ slug: string }>();
@@ -111,10 +125,10 @@ function ThoughtDetail() {
 
         <div className="prose prose-slate prose-lg max-w-none">
           <div
-            className="text-slate-600 leading-relaxed whitespace-pre-wrap"
+            className="text-slate-600 leading-relaxed space-y-4"
             aria-label="Post content"
           >
-            {post.content}
+            {renderContent(post.content)}
           </div>
         </div>
       </article>
