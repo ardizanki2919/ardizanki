@@ -1,6 +1,6 @@
 # 👋 Hello, World!
 
-I'm **Ardi Zanki**, a Software Engineer specializing in building scalable web applications using TypeScript and React.
+I'm **Ardi Zanki**, a Design Engineer.
 
 Based in Yogyakarta, Indonesia — open to remote opportunities worldwide.
 
@@ -8,17 +8,16 @@ Based in Yogyakarta, Indonesia — open to remote opportunities worldwide.
 
 I build scalable and maintainable web applications with modern technologies:
 
-- **Languages:** JavaScript, TypeScript
+- **Design:** Figma
+- **Languages:** TypeScript
 - **UI Library:** React
 - **Routing & Frameworks:** React Router v7
-- **State Management:** Zustand
-- **Data Fetching:** TanStack Query
 - **Styling:** Tailwind CSS
-- **Testing:** Vitest, Playwright
+- **Testing:** Vitest
 
 ## 🌐 Let's Connect
 
-Follow me on [X (Twitter)](https://x.com/ardizanki7), where I share insights on web development, career growth, and life as a software engineer.
+Follow me on [X (Twitter)](https://x.com/ardizanki7), where I share insights on web development, career growth, and life as a design engineer.
 
 You can also find me here:
 - [GitHub](https://github.com/ardizanki2919) – Explore my projects

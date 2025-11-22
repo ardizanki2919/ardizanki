@@ -2,9 +2,9 @@ interface Technology {
   name: string;
   url: string;
   category:
+  | 'design'
   | 'language'
   | 'frontend library'
-  | 'data fetching'
   | 'framework'
   | 'styling'
   | 'backend'
@@ -13,10 +13,10 @@ interface Technology {
 }
 
 const technologies: Technology[] = [
+  { name: 'Figma', url: 'https://figma.com/', category: 'design' },
   { name: 'TypeScript', url: 'https://www.typescriptlang.org/', category: 'language' },
   { name: 'React', url: 'https://reactjs.org/', category: 'frontend library' },
   { name: 'React Router v7', url: 'https://reactrouter.com/', category: 'framework' },
-  { name: 'TanStack Query', url: 'https://tanstack.com/query/', category: 'data fetching' },
   { name: 'Tailwind CSS', url: 'https://tailwindcss.com/', category: 'styling' },
   { name: 'Vitest', url: 'https://vitest.dev/', category: 'testing' },
   { name: 'Playwright', url: 'https://playwright.dev/', category: 'testing' }
@@ -79,7 +79,7 @@ function Projects() {
 
         <div className="pt-4 border-t border-slate-200">
           <p className="text-sm text-slate-500 italic">
-            Stay tuned for updates on my latest projects and open-source contributions!
+            Stay tuned for my latest projects and open-source contributions!
           </p>
         </div>
       </div>

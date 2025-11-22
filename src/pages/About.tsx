@@ -1,45 +1,3 @@
-interface SocialLink {
-  href: string;
-  label: string;
-  name: string;
-}
-
-// Static data — defined outside component to avoid re-renders
-const socialLinks: SocialLink[] = [
-  { href: 'https://x.com/ardizanki7', label: 'X (Twitter)', name: 'Twitter profile' },
-  { href: 'https://github.com/ardizanki2919', label: 'GitHub', name: 'GitHub profile' },
-  { href: 'https://www.linkedin.com/in/ardizanki/', label: 'LinkedIn', name: 'LinkedIn profile' },
-];
-
-// Improved link renderer — cleaner, fewer wrappers, more readable
-const renderSocialLinks = (links: SocialLink[]): React.ReactNode => {
-  return links.map((link, index) => {
-    const isLast = index === links.length - 1;
-    const isSecondLast = index === links.length - 2;
-
-    return (
-      <span key={link.href}>
-        <a
-          href={link.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-slate-800 hover:text-slate-600 underline font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-1 rounded-sm"
-          aria-label={`Visit my ${link.name}`}
-        >
-          {link.label}
-        </a>
-
-        {/* separator logic */}
-        {!isLast && (
-          <span className="text-slate-600">
-            {isSecondLast ? ", or " : ", "}
-          </span>
-        )}
-      </span>
-    );
-  });
-};
-
 function About() {
   return (
     <div className="max-w-2xl">
@@ -49,20 +7,42 @@ function About() {
 
       <div className="space-y-6 text-base text-slate-600 leading-relaxed">
         <p>
-          I'm Ardi, a QA Engineer with 5 years of hands-on experience in manual and automated testing. I specialize in API testing 
-          with Postman, end-to-end automation with Playwright, and CI/CD integration with GitHub Actions. My skills also include 
-          SQL-based database validation and comprehensive test case management.
+          I'm Ardi, a Design Engineer based in Indonesia. I build polished web interfaces using React and TypeScript, 
+          with a strong focus on quality and user experience.
         </p>
 
         <p>
-          I'm currently transitioning from QA to Software Engineering, leveraging my testing mindset to write better, more reliable code. 
-          I focus on building modern and scalable web applications, and in my spare time, I work on personal projects using TypeScript and React.
+          My background as a QA Engineer (5 years) gives me a unique perspective—I approach design engineering with 
+          a testing mindset, ensuring reliability and attention to detail in every component I create.
         </p>
 
         <p>
-          Feel free to connect with me on{' '}
-          {renderSocialLinks(socialLinks)}
-          {' '}to exchange ideas and explore web development together.
+          I work with Figma for design and React with TypeScript for implementation, and I enjoy exploring design systems 
+          and creating smooth interactions.
+        </p>
+
+        <p>
+          You can see more of my work on{' '}
+          <a
+            href="https://x.com/ardizanki7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-800 hover:text-slate-600 underline font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-1 rounded-sm"
+            aria-label="Visit my Twitter profile"
+          >
+            Twitter
+          </a>
+          {' '}and more of my code on{' '}
+          <a
+            href="https://github.com/ardizanki2919"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-800 hover:text-slate-600 underline font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-1 rounded-sm"
+            aria-label="Visit my GitHub profile"
+          >
+            GitHub
+          </a>
+          .
         </p>
       </div>
     </div>

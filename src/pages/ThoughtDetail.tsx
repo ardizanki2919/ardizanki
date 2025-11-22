@@ -84,7 +84,7 @@ function ThoughtDetail() {
   useEffect(() => {
     const defaultTitle = 'Ardi Zanki';
     const defaultDescription =
-      'Software Engineer specializing in TypeScript and React';
+      'Design Engineer based in Indonesia';
 
     const metaDescription = document.querySelector('meta[name="description"]');
 
